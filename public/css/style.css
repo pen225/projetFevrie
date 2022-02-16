@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,600&display=swap');
 
+/* couleur rose #ec1eaede */
 
 html{
     scroll-behavior: smooth;
@@ -25,16 +26,10 @@ a:hover{
 }
 
 /* HEADER */
-/* .header-background{
-    position: static;
-    top: 0px;
-    height: auto;
-    min-height: 700px;
-} */
 
 .stiky-nav{
     padding: 20px;
-    background-color: #101c5dde;
+    background-color: #101c5d;
     border-bottom: 1px solid #9fc1ec;
 }
 
@@ -98,6 +93,10 @@ a:hover{
 
 .carouselSection{
     margin-bottom: 40px;
+    width: 100%;
+    max-width: 1500px;
+    height: auto;
+    margin: 0px auto;
 }
 
 .carousel-item img{
@@ -106,4 +105,17 @@ a:hover{
 
 .footer{
     padding: 20px 0px;
+}
+@media screen and (max-width: 695px) {
+    .carousel-item img{
+        width: auto;
+        height: 500px;
+    }
+}
+@media screen and (max-width: 355px) {
+    .carousel-item img{
+        width: auto;
+        min-width: 500px;
+        height: 500px;
+    }
 }
