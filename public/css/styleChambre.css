@@ -91,23 +91,36 @@ a:hover{
     
 }
 
-/* Carousel */
 
-/* .carouselSection{
-    margin-bottom: 40px;
-    width: 100%;
-    height: auto;
-    margin: 0px auto;
-} */
-.carousel-item{
-    height: 100vh;
+
+.headChambre{
+    display: flex;
 }
 
-.carousel-item img{
+.headChambre img{
+    width: 100%;
+}
+.divChambre{
+    text-align: center;
+    color: white;
+    background-color: black;
+    width: 350px;
     height: 100%;
-    width: 100%;
-    object-fit: cover;
+    margin-right: 20px;
 }
+.divImgChambre{
+    width: 850px;
+}
+.chambre{
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
 
 .footer{
     padding: 20px 0px;
