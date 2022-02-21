@@ -1,114 +1,351 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,600&display=swap');
-
-/* couleur rose #ec1eaede */
-
+/* General */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* font-family: ; */
+}
 html{
     scroll-behavior: smooth;
 }
-
 body{
-    margin: 0px;
-    padding: 0px;
-    font-size: 18px;
-    line-height: 20px;
-    color: #9fc1ec;
-    background-color: #101c5d;
-    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+.rubrique{
+    width: 200px;
+    margin: 30px 0px;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    font-weight: bold;
+    border-bottom: 3px solid #dc8514;
+}
+.point{
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+    background-color: #dc8514;
+    display: inline-block;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-a{
-    color: #9fc1ec;
+.header{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url("../images/PIC-4.jpg") center/cover no-repeat;
+    min-height: 100vh;
+    color: #fff;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
 }
 
-a:hover{
-    color: white !important;
-}
-
-/* HEADER */
-
-.stiky-nav{
-    padding: 20px;
-    background-color: #101c5d;
-    border-bottom: 1px solid #9fc1ec;
-}
-
-.navbar .navbar-brand a{
-    padding: 1rem 0px;
-    display: block;
-    text-decoration: none;
-}
-
-.navbar-brand{
-    font-size: 2.2rem;
+/* Navbar */
+.navbar a{
     color: white;
 }
-.nav-link{
-    color: #9fc1ec;
+.navbar a:hover{
+    color: #dc8514;
+    transition: all ease 1s;
 }
 .navbar-toggler{
-    border-style: none;
-    padding: 10px 6px;
-    outline: none !important;
-
+    color: transparent;
 }
-
-
-.navbar-toggler span{
-    display: block;
-    width: 22px;
-    height: 2px;
-    border: 1px;
-    background: #fff;
+.fa-bars{
+    color: white;
+    font-size: 1.5rem;
 }
-.navbar-toggler span + span{
-    width: 22px;
-    margin-top: 4px;
-}
-.navbar-toggler span + span + span{
-    width: 22px;
+.navbar-brand{
+    font-size: 2rem;
+    font-weight: bold;
 }
 .nav-link{
     font-size: 1.2rem;
-    padding: 1.4rem 1rem;
-    position: relative;
+    margin-left: 10px;
+    margin-top: 10px;
 }
-.active{
-    color: white;
+.head-bottom{
+    flex: 1;
+    text-align: center;
+    width: 80vw;
+    margin: 0 auto;
 }
-.btn{
-    background-color: #ffffff;
-    color: #101c5d;
-    border-radius: 10px;
-    padding: 0.7rem 1.5rem;
-    /* font-style: italic; */
-    font-size: 1.2rem;
-    font-weight: bolder;
+.head-bottom h2{
+    padding: 22px 0;
+    font-size: 45px;
+    border-bottom: 1px solid #fff;
 }
-.btn:hover{
-    background-color: #9fc1ec;
-    color: white;
-    
+.head-bottom p{
+    opacity: 0.9;
+    font-size: 20px;
+    margin: 45px auto;
+    width: 60vw;
+}
+.head-btn{
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: bold;
+    border: 3px solid #fff;
+    background: transparent;
+    padding: 13px 20px;
+    background: rgba(219, 133, 20, 0.2);
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.7s ease;
+}
+.head-btn:hover{
+    background: transparent;
 }
 
-/* Carousel */
 
-/* .carouselSection{
-    margin-bottom: 40px;
-    width: 100%;
-    height: auto;
+/* Section découvrir */
+.img1{
+    height: 250px !important;
+    width: 100% !important;
+    background: url('../images/fleur.webp') center no-repeat;
+    background-size: cover;
+    display: block;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img5{
+    height: 250px !important;
+    width: 100% !important;
+    background: url('../images/car.webp') center no-repeat;
+    background-size: cover;
+    display: block;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img2{
+    height: 250px !important;
+    width: 100% !important;
+    background: url('../images/piscine.webp') center no-repeat;
+    background-size: cover;
+    display: block;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img3{
+    height: 250px !important;
+    width: 100% !important;
+    background: url('../images/bar.webp') center no-repeat;
+    background-size: cover;
+    display: block;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img6{
+    height: 300px !important;
+    width: 100% !important;
+    background: url('../images/chambre.webp') center no-repeat;
+    background-size: cover;
+    display: block;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img7{
+    height: 300px !important;
+    width: 100% !important;
+    background: url('../images/luminaire.webp') center no-repeat;
+    background-size: cover;
+    display: block;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img4{
+    height: 525px !important;
+    width: 100% !important;
+    background: url('../images/baignoi.webp') center no-repeat;
+    background-size: cover;
+    display: block;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgNourriture{
+    height: 300px !important;
+    width: 100% !important;
+    background: url('../images/nourriture.webp') center no-repeat;
+    background-size: cover;
+    display: block;
+}
+.presentation{
+    margin-top: 20px;
+}
+.presentation p{
+    font-size: 24px;
     margin: 0px auto;
-} */
-.carousel-item{
-    height: 100vh;
+    margin-left: 20px;
+    /* width: 40vw; */
+}
+.nomHotel{
+    background: black;
+    height: 300px !important;
+    padding-top: 140px;
+    margin-left: 12px;
+}
+.nomHotel h2{
+    color: white;
+    text-transform: capitalize;
+    font-weight: bold;
+    width: 150px;
+    font-size: 40px;
+    line-height: 2.5rem;
 }
 
-.carousel-item img{
-    height: 100%;
+/* Section reserver */
+.book{
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("../images/luminaire.webp") center/cover no-repeat;
+    color: #fff;
+    padding: 40px 60px;
+}
+.book-form{
+    display: grid;
+}
+.form-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.book-form input[type = "submit"]{
+    margin: 18px 0 0 0;
+    background: var(--dark);
+    color: #fff;
+    border: 1px solid #fff;
+}
+.book-form label, .book-form input{
     width: 100%;
-    object-fit: cover;
+}
+.book-form label{
+    font-weight: 600;
+    word-spacing: 5px;
+    padding-bottom: 8px;
+}
+.book-form input:not(.btn){
+    margin: 4px 0 16px 0;
+    padding: 12px 15px;
+    border-radius: 5px;
+    font-size: 17px;
+    border: none;
+}
+.book-form input:focus{
+    outline: 0;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.4);
+}
+@media(min-width: 768px){
+    .book-form{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 24px;
+    }
+}
+@media(min-width: 1170px){
+    .book-form{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media(min-width: 1370px){
+    .book-form{
+        grid-template-columns: 2fr 2fr 1fr 1fr 1fr 2fr;
+    }
+    .book{
+        height: 40vh;
+        display: grid;
+    }
+}
+@media(max-width: 500px){
+    .book{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
-.footer{
-    padding: 20px 0px;
+
+
+
+/* Services */
+.service h2{
+    color: white;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 35px;
+    padding-top: 240px;
+    padding-left: 10px;
+}
+.service-img6{
+    height: 300px !important;
+    width: 100% !important;
+    background: black;
+    display: block;
+}
+.service-img7{
+    height: 300px !important;
+    width: 100% !important;
+    background: url('../images/fleur.webp') center no-repeat;
+    background-size: cover;
+    display: block;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.serviceImageListe{
+    height: 100% !important;
+    width: 100% !important;
+    background: url('../images/piscine.webp') center no-repeat;
+    background-size: cover;
+    display: block;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.service-liste{
+    width: 100% !important;
+    background-size: cover;
+}
+
+
+/* Chambre */
+.chambre h2{
+    color: white;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 35px;
+    padding-top: 240px;
+    padding-left: 10px;
+}
+.chambre-img6{
+    height: 300px !important;
+    width: 100% !important;
+    background: black;
+    display: block;
+}
+.chambre-img7{
+    height: 300px !important;
+    width: 100% !important;
+    background: url('../images/chambre.webp') center no-repeat;
+    background-size: cover;
+    display: block;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
