@@ -351,7 +351,16 @@ body{
 }
 .presentationChambre{
     margin: 20px auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    
+}
+
+.card-group{
+    width: 80%;
+    margin: 20px auto;
+    border: none !important;
+}
+
+.card-group .card{
+    border: none;
+    padding-left: 30px;
 }
