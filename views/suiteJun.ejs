@@ -103,11 +103,11 @@
               <form class = "book-form">
                   <div class = "form-item">
                       <label for = "checkin-date" class="form-label">Arrivée: </label>
-                      <input type = "date" id = "chekin-date" class="form-control">
+                      <input type = "date" id = "chekin-date" class="form-control" min="">
                   </div>
                   <div class = "form-item">
                       <label for = "checkout-date" class="form-label">Départ: </label>
-                      <input type = "date" id = "chekout-date" class="form-control">
+                      <input type = "date" id = "chekout-date" class="form-control" min="">
                   </div>
                   <div class = "form-item">
                       <label for = "adult" class="form-label">Adultes: </label>
@@ -223,35 +223,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="../public/bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
     <script src="../public/slick-1.8.1/slick/slick.js"></script>
+    <script src="../public/js/suiteJun.js"></script>
     <!-- <script src="../public/js/appPricipale.js"></script> -->
-
-
-
-    <script>
-
-    $('.multiple').slick({
-      infinite: false,
-      slidesToShow: 1,
-      slidesToScroll: 1
-    });
-
-
-
-
-    let previousAll = document.querySelectorAll('.slick-prev');
-    let nextAll = document.querySelectorAll('.slick-next');
-
-
-    for (let i = 0; i < previousAll.length; i++) {
-        const element = previousAll[i];
-        console.log(element);
-        element.innerHTML = `<i class="fa-solid fa-chevron-left"></i>`;
-    }
-    for (let i = 0; i < nextAll.length; i++) {
-        const element = nextAll[i];
-        console.log(element);
-        element.innerHTML = `<i class="fa-solid fa-chevron-right"></i>`;
-    }
-    </script>
 </body>
 </html>
