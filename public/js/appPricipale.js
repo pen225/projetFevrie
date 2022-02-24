@@ -46,7 +46,6 @@ divImage.forEach(element => {
         chambreStan.classList.remove("activeInformation");
         chambreSup.classList.remove("activeInformation");
     });
-
 });
 
 
