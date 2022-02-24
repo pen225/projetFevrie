@@ -382,7 +382,6 @@ body{
     padding: 5px 10px;
     transition: all 1s;
     opacity: 0;
-    z-index: 5678;
 }
 .activeInformation{
    opacity: 1;

@@ -1,0 +1,132 @@
+/* General */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* font-family: ; */
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    line-height: 1.6;
+}
+.rubrique{
+    width: 200px;
+    margin: 30px 0px;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    font-weight: bold;
+    border-bottom: 3px solid #dc8514;
+}
+.point{
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+    background-color: #dc8514;
+    display: inline-block;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url("../images/PIC-4.jpg") center/cover no-repeat;
+    min-height: 100vh;
+    color: #fff;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+}
+
+/* Navbar */
+.navbar a{
+    color: white;
+}
+.navbar a:hover{
+    color: #dc8514;
+    transition: all ease 1s;
+}
+.navbar-toggler{
+    color: transparent;
+}
+.fa-bars{
+    color: white;
+    font-size: 1.5rem;
+}
+.navbar-brand{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.nav-link{
+    font-size: 1.2rem;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.head-bottom{
+    flex: 1;
+    text-align: center;
+    width: 80vw;
+    margin: 0 auto;
+}
+.head-bottom h2{
+    padding: 22px 0;
+    font-size: 45px;
+    border-bottom: 1px solid #fff;
+}
+.head-bottom p{
+    opacity: 0.9;
+    font-size: 20px;
+    margin: 45px auto;
+    width: 60vw;
+}
+.head-btn{
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: bold;
+    border: 3px solid #fff;
+    background: transparent;
+    padding: 13px 20px;
+    background: rgba(219, 133, 20, 0.2);
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.7s ease;
+}
+.head-btn:hover{
+    background: transparent;
+}
+
+/* ----------------------------- */
+.suiteJuniore{
+    padding: 25px;
+    margin-left: 25px;
+}
+.divChambreJun{
+    border: 1px solid red;
+}
+.definiPrix{
+    border-left: 1px solid white;
+    padding: 25px;
+}
+.book{
+    padding: 25px;
+    
+}
+/* .form-item{
+    display: flex;
+    justify-content: space-between;
+} */
+.form-item label{
+    font-size: 25px;
+    margin-right: 20px;
+}
+.form-item input{
+    font-size: 18px;
+    margin-bottom: 10px;
+    width: 300px;
+    
+}
