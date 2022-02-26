@@ -14,6 +14,10 @@ app.get('/suiteJun', (req, res) =>{
     res.render('suiteJun')
 });
 
+app.get('/formReservation', (req, res) =>{
+    res.render('formReservation')
+});
+
 app.listen(PORT, () =>{
     console.log(`Listen on port ${PORT}`);
 });

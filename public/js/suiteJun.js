@@ -29,6 +29,10 @@ const chekinDate = document.getElementById('chekin-date');
 const chekoutDate = document.getElementById('chekout-date');
 const adult = document.getElementById('adult');
 const children = document.getElementById('children');
+const nbrDeNuit = document.querySelector('.nbrDeNuit');
+const totalPrix = document.querySelector('.totalPrix');
+const calculReservation = document.querySelector('.calculReservation');
+const contentReservation = document.querySelector('.contentReservation');
 
     let date = new Date();
     let jour = date.getDate();
@@ -48,18 +52,28 @@ const children = document.getElementById('children');
     chekoutDate.min = `${annee}-${mois}-${jour + 1}`;
 
 
+
+    chekoutDate.addEventListener('change', (e) =>{
+        let date1 = new Date(`${chekinDate.value}`)
+        let date2 = new Date(`${chekoutDate.value}`)
+        e.preventDefault();
+        console.log(chekinDate.value);
+        console.log(chekoutDate.value);
+        console.log(date1);
+        console.log(date2);
+        let jourReservation = (date1 - date2) / (1000*3600*24);
+        jourReservation = Math.abs(jourReservation);
+        let prixReservation = 250 *jourReservation;
+        nbrDeNuit.innerHTML = jourReservation;
+        totalPrix.innerHTML = prixReservation;
+        console.log(prixReservation);
+        calculReservation.style.display="block";
+    })
+    
+
 bookForm.addEventListener('submit', (e) =>{
     e.preventDefault();
-    
-    // Fonction calculPrix
-    let fisrtDate = chekinDate.value;
-    let secondDate = chekoutDate.value;
-
-    const recupJour = (fisrtDate, secondDate) =>{
-        return(secondDate - fisrtDate) / (1000*3600*24);
-    }
-    console.log(typeof(secondDate),typeof(fisrtDate));
-
-    // console.log(recupJour(chekinDate,chekoutDate));
-    
+    // location.assign('/formReservation')
+    contentReservation.style.display="none"
 })
+

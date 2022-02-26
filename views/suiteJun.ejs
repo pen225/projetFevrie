@@ -54,7 +54,7 @@
       </div> -->
 
 
-      <div class="container">
+      <div class="container contentReservation">
         <div class="row">
           <div class="col-lg-6 divChambreJun">
             <div class="multiple d-flex">
@@ -117,8 +117,21 @@
                       <label for = "children" class="form-label">Enfants: </label>
                       <input type = "number" min = "0" value = "0" id = "children" class="form-control">
                   </div>
+                  <div class="bg-success mb-3 calculReservation" style="width: 300px; padding: 5px 10px;">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                        <span class="">Nuit(s) x <span class="nbrDeNuit">1</span> </span>
+                      </div>
+                      
+                      <span class="">$250</span>
+                    </div>
+                   <div class="d-flex justify-content-between">
+                    <h4>Total</h4>
+                    <h4>$<span class="totalPrix">250</span></h4>
+                   </div>
+                  </div>
                   <div class = "form-item">
-                      <input type = "submit" class = "btn btn-success" value = "RESERVER">
+                      <input type = "submit" class = "btn btn-success w-100" value = "RESERVER">
                   </div>
               </form>
             </div>
@@ -161,6 +174,58 @@
            
           </div> -->
         </div>
+      </div>
+
+
+      <div>
+        <form class = "book-form contentForm">
+          <div class = "form-item d-flex">
+            <div>
+              <label for = "checkin-date" class="form-label">Nom: </label>
+              <input type = "text" id = "chekin-date" class="form-control"">
+            </div>
+            <div>
+              <label for = "checkin-date" class="form-label">Prénom: </label>
+              <input type = "text" id = "chekin-date" class="form-control">
+            </div>
+          </div>
+          <div class = "form-item d-flex">
+            <div>
+              <label for = "checkin-date" class="form-label">Adresse mail: </label>
+              <input type = "email" id = "chekin-date" class="form-control"">
+            </div>
+            <div>
+              <label for = "checkin-date" class="form-label">Numéro de téléphone: </label>
+              <input type = "tel" id = "chekin-date" class="form-control">
+            </div>
+          </div>
+          <div class = "form-item d-flex">
+            <div>
+              <label for = "checkin-date" class="form-label">Pays: </label>
+              <input type = "text" id = "chekin-date" class="form-control"">
+            </div>
+            <div>
+              <label for = "checkin-date" class="form-label">Demandes particulières: </label>
+              <input type = "text" id = "chekin-date" class="form-control">
+            </div>
+          </div>
+          <div class="bg-success mb-3 calculReservation" style="width: 300px; padding: 5px 10px;">
+            <div class="d-flex justify-content-between">
+              <div>
+                <span class="">Nuit(s) x <span class="nbrDeNuit">1</span> </span>
+              </div>
+              
+              <span class="">$250</span>
+            </div>
+           <div class="d-flex justify-content-between">
+            <h4>Total</h4>
+            <h4>$<span class="totalPrix">250</span></h4>
+           </div>
+          </div>
+          <div class = "form-item">
+              <input type = "submit" class = "btn btn-success w-100" value = "RESERVER">
+          </div>
+      </form>
       </div>
 
     </header>

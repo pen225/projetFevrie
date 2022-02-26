@@ -103,82 +103,13 @@ body{
 }
 
 /* ----------------------------- */
-.suiteJuniore{
-    padding: 25px;
-    margin-left: 25px;
-}
-.divChambreJun{
-    /* border: 1px solid red; */
-    padding-top: 100px;
-}
-.definiPrix{
-    border-left: 1px solid white;
-    padding: 25px;
-}
-.definiPrix p{
-    font-size: 18px;
-}
-.definiPrix h3{
-    font-size: 40px;
-}
-.book{
-    padding: 25px;
-}
-/* .form-item{
-    display: flex;
-    justify-content: space-between;
-} */
-.form-item label{
-    font-size: 25px;
-    margin-right: 20px;
-}
-.form-item input{
-    font-size: 18px;
-    margin-bottom: 10px;
-    width: 300px;
-    margin-left: 5px;
-}
-.avantage{
-    font-size: 20px;
-}
-.avantage h3{
-    margin-right: 20px;
-    width: 200px;
-}
-.avantage p{
-    margin-right: 20px;
-}
-.multiple img{
-    height: 500px;
-}
-.slick-prev{
-    color: white;
-    background: none;
-    border: none;
-    position: relative;
-    left: 40px;
-    z-index: 20;
-    font-size: 40px;
-}
-.slick-next{
-    background: none;
-    border: none;
-    color: white;
-    position: relative;
-    right: 40px;
-    z-index: 20;
-    font-size: 40px;
-}
-.calculReservation{
-    display: none;
-}
-.contentReservation{
-    display: none;
-}
 .contentForm{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    /* display: none; */
+
+
+    height: 500px;
+    width: 500;
 }
