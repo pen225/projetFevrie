@@ -24,15 +24,16 @@ $('.multiple').slick({
 
 //   ------- Fin slick
 
-const bookForm = document.querySelector('.book-form');
-const chekinDate = document.getElementById('chekin-date');
-const chekoutDate = document.getElementById('chekout-date');
+const bookForm = document.querySelector('.formCalcul');
+const chekinDate = document.getElementById('checkin-date');
+const chekoutDate = document.getElementById('checkout-date');
 const adult = document.getElementById('adult');
 const children = document.getElementById('children');
 const nbrDeNuit = document.querySelector('.nbrDeNuit');
 const totalPrix = document.querySelector('.totalPrix');
 const calculReservation = document.querySelector('.calculReservation');
 const contentReservation = document.querySelector('.contentReservation');
+const contentForm = document.querySelector('.contentForm');
 
     let date = new Date();
     let jour = date.getDate();
@@ -49,7 +50,7 @@ const contentReservation = document.querySelector('.contentReservation');
     }
     console.log(mois);
     chekinDate.min = `${annee}-${mois}-${jour}`;
-    chekoutDate.min = `${annee}-${mois}-${jour + 1}`;
+    chekoutDate.min = `${annee}-${mois}-${jour}`;
 
 
 
@@ -64,6 +65,8 @@ const contentReservation = document.querySelector('.contentReservation');
         let jourReservation = (date1 - date2) / (1000*3600*24);
         jourReservation = Math.abs(jourReservation);
         let prixReservation = 250 *jourReservation;
+        document.querySelector('.prixTotal').value = prixReservation;
+        console.log(document.querySelector('prixTotal'));
         nbrDeNuit.innerHTML = jourReservation;
         totalPrix.innerHTML = prixReservation;
         console.log(prixReservation);
@@ -71,9 +74,10 @@ const contentReservation = document.querySelector('.contentReservation');
     })
     
 
-bookForm.addEventListener('submit', (e) =>{
-    e.preventDefault();
-    // location.assign('/formReservation')
-    contentReservation.style.display="none"
-})
+// bookForm.addEventListener('submit', (e) =>{
+//     e.preventDefault();
+//     // location.assign('/formReservation')
+//     contentReservation.style.display="none";
+//     contentForm.style.display="block";
+// })
 

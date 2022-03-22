@@ -12,7 +12,7 @@ divImage.forEach(element => {
         // console.log(e.target.classList.value);
         if (classValue == "card-img-top suiteJuniore") {
             console.log("suiteJuniore");
-            location.assign('/suiteJun')
+            location.assign('/suiteJunior')
         }else if (classValue == "card-img-top chambreStandard") {
             console.log("chambreStandard");
         }else{
@@ -47,5 +47,3 @@ divImage.forEach(element => {
         chambreSup.classList.remove("activeInformation");
     });
 });
-
-

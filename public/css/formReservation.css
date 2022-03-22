@@ -11,14 +11,7 @@ html{
 body{
     line-height: 1.6;
 }
-.rubrique{
-    width: 200px;
-    margin: 30px 0px;
-    text-transform: uppercase;
-    padding-bottom: 5px;
-    font-weight: bold;
-    border-bottom: 3px solid #dc8514;
-}
+
 .point{
     height: 10px;
     width: 10px;
@@ -26,13 +19,6 @@ body{
     background-color: #dc8514;
     display: inline-block;
 }
-.flex{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 .header{
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url("../images/PIC-4.jpg") center/cover no-repeat;
     min-height: 100vh;
@@ -112,4 +98,14 @@ body{
 
     height: 500px;
     width: 500;
+}
+.form-item label{
+    font-size: 25px;
+    margin-right: 20px;
+}
+.form-item input{
+    font-size: 18px;
+    margin-bottom: 10px;
+    width: 300px;
+    margin-left: 5px;
 }
